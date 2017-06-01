@@ -14,3 +14,7 @@ def about(request):
 	template = loader.get_template('spa/about.html')
 	context = {}
 	return HttpResponse(template.render(context, request))
+def services(request):
+	template = loader.get_template('spa/services.html')
+	context = {}
+	return HttpResponse(template.render(context, request))
