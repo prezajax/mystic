@@ -1,0 +1,53 @@
+
+<div class = "row boxBackground vertical-align">
+	{% if imageOnLeftSide == "True" %}
+	<div class = "col-md-6 noPadding">
+		<img src = {{imagePath}} class = "img-responsive specialCol ">
+	</div>
+	<div class = "col-md-6  ">
+		<div class = "row "> 
+			
+		<div class = "col-md-12 text-center">
+				<h1> {{title}}</h1>
+		</div>
+	</div>	
+	<div class = "row ">
+			
+				<div class = "col-md-12 text-center">
+						<br>
+				</div>
+		</div>	
+		<div class = "row ">	
+				<div class = "col-md-12 text-center">
+						<div class = "lead"> {{description}} </div>
+				</div>
+
+		</div>
+	</div>
+	{%else%}
+	<div class = "col-md-6 ">
+		<div class = "row ">
+			
+		<div class = "col-md-12 text-center">
+				<h1> {{title}}</h1>
+		</div>
+	</div>	
+	<div class = "row ">
+			
+				<div class = "col-md-12 text-center">
+						<br>
+				</div>
+		</div>	
+		<div class = "row ">	
+				<div class = "col-md-12 text-center">
+						<div class = "lead"> {{description}}</div>
+				</div>
+
+		</div>
+	</div>
+	<div class = "col-md-6 noPadding">
+		<img src = {{imagePath}} class = "img-responsive specialCol ">
+	</div>
+
+	{%endif%}
+</div>
