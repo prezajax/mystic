@@ -3,19 +3,31 @@
 	.mainBackground {
 		background:#ecf0f1;
 	}
+	.pictureText{
+		color:#EFEFEF;
+		font-size:4em;
+	}
 	.padding-0 {
     	padding: 0;
     	padding-right: 0;
 	}
 	.moveTextUp{
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-200%);
 	}
 	.otherbg {
 		background:url("/static/main.jpeg");
 		background-repeat: no-repeat;
 		background-position: center; 
 		background-position:top;
+	}
+	.ledbg {
+		background:url("/static/a4.jpg");
+		background-repeat: no-repeat;
+		background-position: center; 
+		background-position:top;
+		background-size:cover;
+		z-index:-1;
 	}
 	.bg {
 		background:url({% static "main.jpeg" %});
@@ -67,7 +79,16 @@
 		color:#2c3e50;
 		margin-left: -15%;
 	}
+	.moveTextRight dt{
+		padding-left:10%;
+	}
+	.moveTextRight dd{
+		padding-left:23%;
+	}
+	.priceText{
+		font-size:2em;
 
+	}
 	.chillbackground {
 		background: rgba(210,180,140, 0.3);
 		color:#2c3e50;
@@ -86,7 +107,7 @@
 	}
 	.boxBackground{
 		
-		background-color:#CFD8DC;
+		background-color:#F5F5F5;
 		color:212121;
 	}
 	.vertical-align {
@@ -96,5 +117,8 @@
 	.noPadding{
 		padding-right:0px;
 		padding-left:0px;
+	}
+	.bigText{
+		font-size: v
 	}
 	.navbar li { color: #000 }

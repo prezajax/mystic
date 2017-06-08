@@ -1,6 +1,7 @@
 	{% extends 'spa/base.html' %}
 	{% load static %}
 	{% block content %}
+
 	<div class = "container-fluid">
 		<div class = "row">
 			<div class = "col-md-2">
@@ -38,7 +39,10 @@
 		</div><!-- end row -->
 		<br>
 		<br>
-		{{photoBlock}}
-		{{secondBlock}}
+		{% for block in photoBlock %}
+		{{block}}
+		{%endfor%}
 	</div><!-- end coontainer -->
+
+
 	{% endblock %}
