@@ -39,6 +39,10 @@ def led(request):
 	template = loader.get_template('spa/led.html')
 	context = {}
 	return HttpResponse(template.render(context, request))
+def oxygen(request):
+	template = loader.get_template('spa/oxygen.html')
+	context = {}
+	return HttpResponse(template.render(context, request))
 def peels(request):
 	image = static("a2.jpg")
 	imageOnLeftSide = "True"
